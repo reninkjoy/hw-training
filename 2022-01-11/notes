@@ -64,4 +64,47 @@ Virtual environment
 	sudo  apt-get install python3.8-dev python3.8-venv
 	python3 -m venv env
 	source env/bin/activate
+
+Do these exercises
+apt scrapy	
+	sudo apt install python3-scrapy
+	scrapy shell	
+	sudo apt remove python3-scrapy
+	
+pip scrapy
+	python3 -m pip install scrapy
+	python3 -m scrapy shell
+	python3 -m pip uninstall scrapy
+	
+nano
+	nano note
+	
+sublime installing 
+	sudo apt install sublime-text
+
+Create a python 3 virtual environment and install scrapy
+	sudo  apt-get install python3.8-dev python3.8-venv
+	python3 -m venv env
+	source env/bin/activate
+	pip install wheel 
+	pip install scrapy
+	scrapy shell
+	
+git commands
+	Git config command
+		git config --global user.name "ImDwivedi1"  
+		git config --global user.email "Himanshudubey481@gmail.com"  
+	$ git init Demo  	#for initialize an empty repository
+	$ git clone URL  	#make a copy of a repository from an existing URL
+	$ git add*  		#dd one or more files	
+	$ git commit -m " Commit Message"  	#history with a message.
+	$ git commit -a  	#ommits any files you've changed since then.
+	$ git status  		#display the state of the working directory and the staging area
+	$ git push [variable name] master  #anges made on the master branch,
+	$ git push --all  	#pushes all the branches to the server repository.
+	$ git pull URL  	#receive data from GitHub
+	$ git branch		#lists all the branches
+	$ git merge BranchName  #merge the specified branch
+	$ git log     		#check the commit history.
+	
 	
