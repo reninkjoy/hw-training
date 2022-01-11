@@ -1,0 +1,67 @@
+basic commands
+	pwd
+	ls
+	cd
+	mkdir & rmdir
+	rm
+	touch   -creating files
+	man & --help
+	cp      -copy
+	mv	-move
+	echo	write to fle 
+	chmod	permissions
+	
+sudo
+	sudo can be used with additional options:
+
+	-h – help; displays syntax and command options
+	-V – version; displays the current version of the sudo application
+	-v – validate; refresh the time limit on sudo without running a command
+	-l – list; lists the user’s privileges, or checks a specific command
+	-k – kill; end the current sudo privileges
+	
+grep [options] pattern [files]
+	Options Description
+	-c : This prints only a count of the lines that match a pattern
+	-h : Display the matched lines, but do not display the filenames.
+	-i : Ignores, case for matching
+	-l : Displays list of a filenames only.
+	-n : Display the matched lines and their line numbers.
+	-v : This prints out all the lines that do not matches the pattern
+	-e exp : Specifies expression with this option. Can use multiple times.
+	-f file : Takes patterns from file, one per line.
+	-E : Treats pattern as an extended regular expression (ERE)
+	-w : Match whole word
+	-o : Print only the matched parts of a matching line,
+	 with each such part on a separate output line.
+
+	-A n : Prints searched line and nlines after the result.
+	-B n : Prints searched line and n line before the result.
+	-C n : Prints searched line and n lines after before the result.
+	
+APT
+	  list - list packages based on package names
+	  search - search in package descriptions
+	  show - show package details
+	  install - install packages
+	  reinstall - reinstall packages
+	  remove - remove packages
+	  autoremove - Remove automatically all unused packages
+	  update - update list of available packages
+	  upgrade - upgrade the system by installing/upgrading packages
+	  full-upgrade - upgrade the system by removing/installing/upgrading packages
+	  edit-sources - edit the source information file
+	  satisfy - satisfy dependency strings
+	
+package installing 
+	sudo apt install app_name
+	pip install package name #in python
+	
+IDE - Sublime text	text editer advance
+	subl using terminal
+	
+Virtual environment
+	sudo  apt-get install python3.8-dev python3.8-venv
+	python3 -m venv env
+	source env/bin/activate
+	
