@@ -1,3 +1,6 @@
+https://git-scm.com/docs
+
+
 Git work flow 
 	git config --global user.name "name"
 	git config --global user.email "email"
@@ -10,7 +13,7 @@ Git work flow
 	git pull
 
 
-git merge branchname #combines the changes from one branch to another branch
+git merge branchname   # combines the changes from one branch to another branch
 git checkout    	# start working in a different branch, use git checkout to switch branches.
 git stash       	# save changes made when they’re not in a state to commit them to a repository
 git log        	# show the chronological commit history for a repository.
@@ -18,7 +21,7 @@ git rm			# Remove files
 git diff 		# Show changes between commits, commit and working tree, etc
 git notes  		# Add or inspect object notes
 git restore 	    	# Restore working tree files
-git mv <options>…​ <args>…		#Move or rename a file, a directory, or a symlink
+git mv <options>…​ <args>… #Move or rename a file, a directory, or a symlink
 git switch 		# Switch branches
 git mergetool 		# Run merge conflict resolution tools to resolve merge conflicts
 git tag 		# Create, list, delete or verify a tag object signed with GPG
@@ -30,4 +33,8 @@ git shortlog 		# Summarize git log output
 git reset commithash	# reset our repository back to the specific commit using 
 git revert HEAD --no-edit # git revert HEAD --no-edit
 git commit --amend -m "msg" # commit message is full of spelling errors. Embarrassing. Let's amend
+git grep  		# Print lines matching a pattern
+
+
+
 
