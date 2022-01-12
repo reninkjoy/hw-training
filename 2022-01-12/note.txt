@@ -1,8 +1,10 @@
 Git work flow 
 	git config --global user.name "name"
 	git config --global user.email "email"
-	git init
-	git remote add origin <link>
+	
+	git remote add origin <link> or git clone <link>
 	git add --all
 	git commit -m "msg"
-	git push -u origin 
+	git push origin main 
+	
+	git pull
