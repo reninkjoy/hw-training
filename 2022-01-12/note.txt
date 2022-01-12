@@ -34,7 +34,10 @@ git reset commithash	# reset our repository back to the specific commit using
 git revert HEAD --no-edit # git revert HEAD --no-edit
 git commit --amend -m "msg" # commit message is full of spelling errors. Embarrassing. Let's amend
 git grep  		# Print lines matching a pattern
-
-
+git blame 		# Show what revision and author last modified each line of a file
+git bisect 		# Use binary search to find the commit that introduced a bug
+git apply 		# Apply a patch to files and/or to the index
+git cherry-pick 	# Apply the changes introduced by some existing commits
+git rebase 		# Reapply commits on top of another base tip
 
 
