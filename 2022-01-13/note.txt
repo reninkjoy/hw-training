@@ -20,7 +20,8 @@ Objects
 	obj = Dog()
 
 Methods
-	Methods represent behaviors. Methods perform actions; methods might return information about 	an object, or update an object’s data. The method’s code is defined in the class definition.	
+	Methods represent behaviors. Methods perform actions; methods might return information about 	
+	an object, or update an object’s data. The method’s code is defined in the class definition.	
 	
 The __init__ method 	constructors
 	The method is useful to do any initialization you want to do with your object. 
@@ -34,24 +35,29 @@ Destructor
 Polymorphism
 	Polymorphism simply means having many forms
 	1. Method Overriding
-		Runtime polymorphism uses method overriding. In method overriding, a child class can 		provide a different implementation than its parent class.
+		Runtime polymorphism uses method overriding. In method overriding, a child class can 
+		provide a different implementation than its parent class.
 	2. Method Overloading
-		Methods or functions may have the same name, but a different number of parameters 			passed into the method call. Different results may occur depending on the number of 		parameters passed in.
+		Methods or functions may have the same name, but a different number of parameters 
+		passed into the method call. Different results may occur depending on the number of 
+		parameters passed in.
 		
 Encapsulation
 	we have created the variable as the private attribute. We cannot even access this attribute
 	directly and can’t even change its value.
 	 
 Abstraction
-	Abstraction means that the user interacts with only selected attributes and methods of an 		object. Abstraction uses simplified, high level tools, to access a complex object.
+	Abstraction means that the user interacts with only selected attributes and methods of an 		
+	object. Abstraction uses simplified, high level tools, to access a complex object.
 	
 Inheritance
 	Inheritance is the capability of one class to derive or inherit the properties from another 
-	class. The class that derives properties is called the derived class or base class and the 		class from which the properties are being derived is called the base class or parent class. 
-	Hierarchical Inheritance:
-	Multilevel Inheritance 
-	Multiple Inheritance:
-	Single Inheritance:
+	class. The class that derives properties is called the derived class or base class and the 		
+	class from which the properties are being derived is called the base class or parent class. 
+		Hierarchical Inheritance:
+		Multilevel Inheritance 
+		Multiple Inheritance:
+		Single Inheritance:
 
 Concepts of Functional Programming
 
@@ -75,12 +81,12 @@ Variables are Immutable:
 
 Python Function
 
-*args 
+*args (Non-Keyword Arguments)
 	The special syntax *args in function definitions in python is used to pass a variable number 
 	of arguments to a function. It is used to pass a non-key worded, variable-length argument
 	list.
 
-**kwargs
+**kwargs (Keyword Arguments)
 	The special syntax **kwargs in function definitions in python is used to pass a keyworded, 
 	variable-length argument list. We use the name kwargs with the double star. The reason is 
 	because the double star allows us to pass through keyword arguments (and any number of them).
@@ -104,5 +110,107 @@ Map():
 	map() function returns a list of the results after applying the given function to each item 
 	of a given iterable (list, tuple etc.)
 
+Basic Programming 
 
+Indentation:
+	Indentation in Python refers to the (spaces and tabs) that are used at the beginning of a 
+	statement. The statements with the same indentation belong to the same group called a suite.
+
+Data types:
+	str 	:x = str("Hello World")
+	int	:x = int(20)
+	float	:x = float(20.5)
+	boolean :bool([x])	True or False
+	list	:x = list(("apple", "banana", "cherry"))
+	dict	:x = dict(name="John", age=36)
+	tuple	:x = tuple(("apple", "banana", "cherry"))
+	set	:x = set(("apple", "banana", "cherry"))	
+	none	:x= None
+	
+Python Arithmetic Operators
+
++ Addition		Adds values on either side of the operator.	a + b = 30
+- Subtraction		Subtracts right hand operand from left hand operand.	a – b = -10
+* Multiplication	Multiplies values on either side of the operator	a * b = 200
+/ Division		Divides left hand operand by right hand operand	b / a = 2
+% Modulus		Divides left hand operand by right hand operand and returns remainder
+			b % a = 0
+** Exponent		Performs exponential (power) calculation on operators
+			a**b =10 to the power 20
+// Floor Division	The division of operands where the result is the quotient in which the digits
+			after the decimal point are removed. But if one of the operands is negative,
+			the result is floored, i.e., rounded away from zero (towards negative
+			infinity) −	9//2 = 4 and 9.0//2.0 = 4.0, -11//3 = -4, -11.0//3 = -4.0	
  
+Python Comparison Operators
+
+==			If the values of two operands are equal, then the condition becomes true.
+			(a == b) is not true.
+!=			If values of two operands are not equal, then condition becomes true.
+			(a != b) is true.
+<>			If values of two operands are not equal, then condition becomes true.
+			(a <> b) is true. This is similar to != operator.
+>			If the value of left operand is greater than the value of right operand, then condition
+			becomes true.	(a > b) is not true.
+<			If the value of left operand is less than the value of right operand, then condition
+			becomes true.	(a < b) is true.
+>=			If the value of left operand is greater than or equal to the value of right operand, then
+			condition becomes true.(a >= b) is not true.
+<=			If the value of left operand is less than or equal to the value of right operand, then
+			condition becomes true. (a <= b) is true.
+	
+Python Bitwise Operators
+	
+& Binary AND		Operator copies a bit to the result if it exists in both operands
+			(a & b) (means 00001100)
+| Binary OR		It copies a bit if it exists in either operand.	(a | b) = 61 (means 0011 1101)
+^ Binary XOR		It copies the bit if it is set in one operand but not both.
+			(a ^ b) = 49 (means 00110001)
+~ Binary Ones Complement	It is unary and has the effect of 'flipping' bits.
+				(~a ) = -61 (means 1100 0011 in 2's complement form due to a signed binary number.
+<< Binary Left Shift	The left operands value is moved left by the number of bits specified by the right 
+			operand.	a << 2 = 240 (means 1111 0000)
+>> Binary Right Shift	The left operands value is moved right by the number of bits specified by the right 
+			operand.	a >> 2 = 15 (means 0000 1111)
+
+if else elif	
+
+loop 
+	for 
+	while 
+	do while
+
+File Operations
+
+Opening a File		:Opening a file is the fundamental step in every file handling task. 			open("myfile.txt") or open("myfile.txt", "r"),open("myfile.txt", "w")
+			open("myfile.txt", "a"), open("myfile.txt", "r+")
+	
+Reading a File		: read the contents of the file
+			file = open("myfile.txt", "r")
+			print(file.read())
+	
+Writing/Creating a File: After opening a file, is writing into a file
+			file = open("myfile.txt", "w")	  
+			file.write("Hello Alln")
+
+Closing a File		: opening and performing the reading, writing operations,
+			  it is important to close the file. 
+			file = open("myfile.txt", 'r')
+			print(file.read())
+			file.close()
+
+Cursor Positioning Methods
+ The .seek() method	: change the cursor to a specific position
+ 			 file = open("myfile.txt", 'r')
+			 file.seek(0)
+			 file.close()
+
+ The .tell() method	: prints the current position of our cursor
+			file = open("myfile.txt", 'r')
+			file.tell()
+			
+Truncating a File	: truncate the file up to the desired length.
+			file = open('myfile.txt', 'w')
+			file.truncate(20)
+			file.close()		
+
