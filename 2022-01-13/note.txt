@@ -1,0 +1,83 @@
+
+Main Concepts of Object-Oriented Programming (OOPs) 
+
+Class   
+	A class is a collection of objects. A class contains the blueprints or the prototype from 
+	which the objects are being created. It is a logical entity that contains some attributes 
+	and methods. 
+	example
+		class ClassName:
+		   # Statement-1
+		   .
+		   .
+		   .
+		   # Statement-N
+Objects
+	The object is an entity that has a state and behavior associated with it. It may be any 
+	real-world object like a mouse, keyboard, chair, table, pen, etc. Integers, strings, 
+	floating-point numbers, even arrays, and dictionaries, are all objects. 
+	example
+	obj = Dog()
+
+Methods
+	Methods represent behaviors. Methods perform actions; methods might return information about 	an object, or update an object’s data. The method’s code is defined in the class definition.	
+	
+The __init__ method 	constructors
+	The method is useful to do any initialization you want to do with your object. 
+	example
+	def __init__(self, name):
+		self.name = name
+		
+Destructor
+	def __del__(self):	
+		
+Polymorphism
+	Polymorphism simply means having many forms
+	1. Method Overriding
+		Runtime polymorphism uses method overriding. In method overriding, a child class can 		provide a different implementation than its parent class.
+	2. Method Overloading
+		Methods or functions may have the same name, but a different number of parameters 			passed into the method call. Different results may occur depending on the number of 		parameters passed in.
+		
+Encapsulation
+	we have created the variable as the private attribute. We cannot even access this attribute
+	directly and can’t even change its value.
+	 
+Abstraction
+	Abstraction means that the user interacts with only selected attributes and methods of an 		object. Abstraction uses simplified, high level tools, to access a complex object.
+	
+Inheritance
+	Inheritance is the capability of one class to derive or inherit the properties from another 
+	class. The class that derives properties is called the derived class or base class and the 		class from which the properties are being derived is called the base class or parent class. 
+	Hierarchical Inheritance:
+	Multilevel Inheritance 
+	Multiple Inheritance:
+	Single Inheritance:
+	
+Python Function
+
+*args 
+	The special syntax *args in function definitions in python is used to pass a variable number 
+	of arguments to a function. It is used to pass a non-key worded, variable-length argument
+	list.
+
+**kwargs
+	The special syntax **kwargs in function definitions in python is used to pass a keyworded, 
+	variable-length argument list. We use the name kwargs with the double star. The reason is 
+	because the double star allows us to pass through keyword arguments (and any number of them).
+	
+yield
+	The yield statement suspends function’s execution and sends a value back to the caller, but 
+	retains enough state to enable function to resume where it is left off. When resumed, the 
+	function continues execution immediately after the last yield run. 
+
+lambda
+	lambda arguments : expression 
+	g = lambda x: x*x*x
+	print(g(7)) output is 7 cube
+	
+Immutability
+	Immutability is a functional programming paradigm can be used for debugging as it will throw 
+	an error where the variable is being changed not where the value is changed. Python too 
+	supports some immutable data types like string, tuple, numeric, etc.
+
+ 
