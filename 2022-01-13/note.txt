@@ -52,7 +52,27 @@ Inheritance
 	Multilevel Inheritance 
 	Multiple Inheritance:
 	Single Inheritance:
-	
+
+Concepts of Functional Programming
+
+Pure Functions: 
+	These functions have two main properties. First, they always produce the same output for 
+	the same arguments irrespective of anything else. Secondly, they have no side-effects i.e. 
+	they do modify any argument or global variables or output something.
+
+Recursion: 
+	There are no “for” or “while” loop in functional languages. Iteration in functional 
+	languages is implemented through recursion.
+
+Functions are First-Class and can be Higher-Order: 
+	First-class functions are treated as first-class variable. The first-class variables can be 
+	passed to functions as a parameter, can be returned from functions or stored in data 
+	structures.
+
+Variables are Immutable: 
+	In functional programming, we can’t modify a variable after it’s been initialized. We can 
+	create new variables – but we can’t modify existing variables.
+
 Python Function
 
 *args 
@@ -79,5 +99,10 @@ Immutability
 	Immutability is a functional programming paradigm can be used for debugging as it will throw 
 	an error where the variable is being changed not where the value is changed. Python too 
 	supports some immutable data types like string, tuple, numeric, etc.
+
+Map(): 
+	map() function returns a list of the results after applying the given function to each item 
+	of a given iterable (list, tuple etc.)
+
 
  
