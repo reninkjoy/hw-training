@@ -1,0 +1,22 @@
+{
+    "name": "ashitha",
+    "emp_id": 1,
+    "login_time": null,
+    "logout_time": "2022-01-17 17:49",
+    "task": [
+        {
+            "task_title": "python1",
+            "task_description": "coding",
+            "start_time": "2022-01-17 17:48",
+            "end_time": "2022-01-17 17:48",
+            "task_status": true
+        },
+        {
+            "task_title": "python2",
+            "task_description": "coding python",
+            "start_time": "2022-01-17 17:48",
+            "end_time": "2022-01-17 17:49",
+            "task_status": false
+        }
+    ]
+}
