@@ -1,0 +1,2 @@
+Bayut  website scraped using the python request, lxml etc
+and stored the data into the monogodb
