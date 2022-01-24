@@ -1,0 +1,59 @@
+proxies
+	import requests
+
+	proxies = {
+	  'http': 'http://10.10.1.10:3128',
+	  'https': 'http://10.10.1.10:1080',
+	}
+	session = requests.Session()
+	session.proxies.update(proxies)
+
+	session.get('http://example.org')
+
+proxies = {
+    'http': 'socks5://user:pass@host:port',
+    'https': 'socks5://user:pass@host:port'
+}
+
+proxies = {'http': 'http://user:pass@10.10.1.10:3128/'}
+
+
+Streaming Requests
+	import json
+	import requests
+
+	r = requests.get('https://httpbin.org/stream/20', stream=True)
+
+	for line in r.iter_lines():
+
+	    # filter out keep-alive new lines
+	    if line:
+		decoded_line = line.decode('utf-8')
+		print(json.loads(decoded_line))
+		
+		
+Prepared Requests		
+	from requests import Request, Session
+
+	s = Session()
+
+	req = Request('POST', url, data=data, headers=headers)
+	prepped = req.prepare()
+
+	# do something with prepped.body
+	prepped.body = 'No, I want exactly this as the body.'
+
+	# do something with prepped.headers
+	del prepped.headers['Content-Type']
+
+	resp = s.send(prepped,
+	    stream=stream,
+	    verify=verify,
+	    proxies=proxies,
+	    cert=cert,
+	    timeout=timeout
+	)
+
+print(resp.status_code)		
+
+		
