@@ -8,8 +8,8 @@ product_name=response.xpath('//h1/text()').extract_first()
 item["product_name"]=product_name
 
 #Ratings
-ratings=response.xpath('//div[@itemprop="aggregateRating"]/preceding-sibling::div/text()').extract()
-ratings=float(ratings[0])/float(ratings[1].replace("/",""))
+ratings=response.xpath('//div[@itemprop="aggregateRating"]/preceding-sibling::div/text()').extract_first()
+ratings=float(ratings)/5
 print(type(ratings))
 item["ratings"]=ratings
 
