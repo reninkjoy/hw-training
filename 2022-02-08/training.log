@@ -1,0 +1,24 @@
+Q/A meesho task 
+
+mongoexport --db demo --collection result --file a.json
+mongoexport --db demo --collection result | sed '/"_id":/s/"_id":[^,]*,//' > test.json
+
+mongoimport --db test --collection results --headerline --type=csv --file myntra_2022_02_02_91.csv
+
+
+To find to field are equal or not 
+{$where: "this.product_id!=this.catalog_id"}
+{$where: "this.catalog_name!=this.product_name"}
+
+To check the contant value
+{source:{$ne:"amazon"}}
+
+To check date 
+{arrival_date:{$regex:/\d*-\d*-\d* \d*:\d*:\d*/}}
+
+To check the image urls 
+{image_url:{$regex:/https?:\/\/.*\.(?:gif|jpg)/}}
+
+To check boolean 
+{is_sold_out:{$in:["true","false"]}}
+ 
